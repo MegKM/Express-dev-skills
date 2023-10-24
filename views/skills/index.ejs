@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>Programming Skills</title>
+</head>
+<header>
+    <h1>Programming Skills</h1>
+</header>
+<body>
+    <main>
+    <a href="/">Home</a>
+    <ul>
+        <% skills.forEach(function(s) { %>
+            <li>
+                <a href="/skills/<%= s.id %>"><%= s.name %></a>
+            </li>
+        <% }); %>
+    </ul>
+    </main>
+    <footer>
+        <p>Created by Megan Mithen | 2023</p>
+    </footer>
+</body>
+</html>

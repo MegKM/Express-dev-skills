@@ -1,8 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playpen+Sans:wght@300&display=swap');
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 200px 1fr 100px;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  margin: 0px;
+  padding: 20px;
+  padding-left: 75px;
+  background-color: red;
+  background: red;
+  background: 
+  linear-gradient(
+    90deg, 
+    rgba(108,129,189,1) 0%, 
+    rgb(235, 127, 127) 100%);
+}
+
+main {
+  padding: 20px;
+  padding-left: 50px;
+}
+
+footer {
+  grid-row: 3;
+  margin: 0px;
+  padding: 20px;
+  background-color: red;
+  background: red;
+  background: 
+  linear-gradient(
+    90deg, 
+    rgba(108,129,189,1) 0%, 
+    rgb(235, 127, 127) 100%);
+}
+
+footer > p {
+  font-family: 'Playfair Display', serif;
+  color: rgb(46, 45, 45);
+  text-align: center;
+}
+
+#main-page-text {
+  font-family: 'Playfair Display', serif;
+  padding-left: 30px;
 }
 
 a {
-  color: #00B7FF;
+  color: #8e0bc2;
+}
+
+h1 {
+  font-size: 75px;
+}
+h1, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+h4, a {
+  font-family: 'Playpen Sans', cursive;
 }
