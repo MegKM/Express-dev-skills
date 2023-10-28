@@ -21,6 +21,21 @@ header {
     rgb(235, 127, 127) 100%);
 }
 
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+  /* position: relative;
+  left: 200px; */
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 10px;
+}
+
 main {
   padding: 20px;
   padding-left: 50px;

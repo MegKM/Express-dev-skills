@@ -1,27 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <title>Programming Skills</title>
-</head>
-<header>
-    <h1>Programming Skills</h1>
-</header>
-<body>
+<%- include('../partials/header') %>
     <main>
     <a href="/">Home</a>
     <ul>
         <% skills.forEach(function(s) { %>
             <li>
+                
+                <form action="/skills/<%= s.id %>?_method=DELETE"
+                    class="delete-form" method="POST">
+                    <button type="submit">&times;</button>
+                </form>
+
                 <a href="/skills/<%= s.id %>"><%= s.name %></a>
             </li>
+            
         <% }); %>
     </ul>
+    <a href="/skills/new">Add a skill</a>
     </main>
-    <footer>
-        <p>Created by Megan Mithen | 2023</p>
-    </footer>
-</body>
-</html>
+
+<%- include('../partials/footer') %>
